@@ -1,0 +1,73 @@
+---
+pid: 3888
+cwd: "C:\Users\LENOVO\Desktop\Study2Passport"
+command: "cd \"C:\\Users\\LENOVO\\Desktop\\Study2Passport\"; npm run dev"
+started_at: 2026-06-16T10:18:41.957Z
+running_for_ms: 2305011  
+---
+
+> study2passport@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.198:3000
+✓ Ready in 897ms
+
+ GET / 200 in 912ms (next.js: 377ms, application-code: 534ms)
+ GET / 200 in 125ms (next.js: 7ms, application-code: 118ms)
+ GET / 200 in 134ms (next.js: 9ms, application-code: 125ms)
+ GET / 200 in 536ms (next.js: 18ms, application-code: 518ms)
+✓ Compiled in 446ms
+ GET / 200 in 329ms (next.js: 156ms, application-code: 173ms)
+ GET / 200 in 246ms (next.js: 6ms, application-code: 240ms)
+✓ Compiled in 267ms
+ GET / 200 in 211ms (next.js: 100ms, application-code: 111ms)
+✓ Compiled in 6.1s
+ GET / 200 in 7.0s (next.js: 5.3s, application-code: 1694ms)
+ GET / 200 in 999ms (next.js: 355ms, application-code: 644ms)
+ GET / 200 in 532ms (next.js: 13ms, application-code: 519ms)
+ GET / 200 in 535ms (next.js: 102ms, application-code: 433ms)
+ GET / 200 in 535ms (next.js: 195ms, application-code: 341ms)
+ GET / 200 in 539ms (next.js: 268ms, application-code: 272ms)
+ GET / 200 in 537ms (next.js: 48ms, application-code: 489ms)
+ GET / 200 in 501ms (next.js: 26ms, application-code: 475ms)
+ GET / 200 in 409ms (next.js: 62ms, application-code: 347ms)
+ GET / 200 in 409ms (next.js: 129ms, application-code: 281ms)
+ GET / 200 in 414ms (next.js: 10ms, application-code: 404ms)
+ GET / 200 in 414ms (next.js: 193ms, application-code: 221ms)
+ GET / 200 in 475ms (next.js: 17ms, application-code: 458ms)
+ GET / 200 in 361ms (next.js: 10ms, application-code: 351ms)
+ GET / 200 in 261ms (next.js: 10ms, application-code: 251ms)
+ GET / 200 in 260ms (next.js: 69ms, application-code: 191ms)
+ GET / 200 in 260ms (next.js: 121ms, application-code: 138ms)
+ GET / 200 in 261ms (next.js: 177ms, application-code: 84ms)
+ GET / 200 in 60ms (next.js: 4ms, application-code: 56ms)
+ GET / 200 in 56ms (next.js: 7ms, application-code: 49ms)
+ GET / 200 in 381ms (next.js: 16ms, application-code: 365ms)
+ GET / 200 in 224ms (next.js: 6ms, application-code: 218ms)
+ GET / 200 in 138ms (next.js: 9ms, application-code: 129ms)
+ GET / 200 in 308ms (next.js: 39ms, application-code: 269ms)
+ GET / 200 in 1608ms (next.js: 8ms, application-code: 1600ms)
+ GET / 200 in 1568ms (next.js: 6ms, application-code: 1562ms)
+ GET / 200 in 1514ms (next.js: 19ms, application-code: 1495ms)
+ GET / 200 in 1595ms (next.js: 499ms, application-code: 1097ms)
+ GET / 200 in 1596ms (next.js: 708ms, application-code: 887ms)
+ GET / 200 in 1599ms (next.js: 958ms, application-code: 642ms)
+ GET / 200 in 645ms (next.js: 23ms, application-code: 622ms)
+ GET / 200 in 563ms (next.js: 15ms, application-code: 548ms)
+ GET / 200 in 971ms (next.js: 9ms, application-code: 962ms)
+ GET / 200 in 1019ms (next.js: 73ms, application-code: 946ms)
+ GET / 200 in 1078ms (next.js: 137ms, application-code: 940ms)
+ GET / 200 in 1141ms (next.js: 200ms, application-code: 941ms)
+ GET / 200 in 1187ms (next.js: 135ms, application-code: 1052ms)
+ GET /icon?79d8e71379f87fda 200 in 2.3s (next.js: 1503ms, application-code: 817ms)
+ GET /icon?79d8e71379f87fda 200 in 228ms (next.js: 6ms, application-code: 222ms)
+ GET / 200 in 1421ms (next.js: 215ms, application-code: 1206ms)
+ GET /icon?79d8e71379f87fda 200 in 1423ms (next.js: 317ms, application-code: 1106ms)
+ GET / 200 in 1331ms (next.js: 44ms, application-code: 1287ms)
+ GET / 200 in 310ms (next.js: 52ms, application-code: 258ms)
+ GET /icon 200 in 372ms (next.js: 68ms, application-code: 304ms)
+ GET /icon?79d8e71379f87fda 200 in 188ms (next.js: 6ms, application-code: 182ms)
+ GET / 200 in 305ms (next.js: 13ms, application-code: 292ms)
+ GET /icon?79d8e71379f87fda 200 in 238ms (next.js: 5ms, application-code: 233ms)

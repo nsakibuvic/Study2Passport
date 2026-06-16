@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme inline {
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Modern professional design system */
+body {
+  font-family: var(--font-geist-sans);
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-amber-600 hover:bg-amber-700 active:bg-amber-800 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md disabled:opacity-70;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 px-6 py-3 text-sm font-semibold text-slate-700 transition-all;
+}
+
+/* Cards */
+.card {
+  @apply border border-slate-200 rounded-2xl p-6 md:p-7 shadow-sm hover:shadow-md transition-shadow;
+  background-color: #F5F5F5;
+}
+
+.card-hover {
+  @apply transition-all hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+/* Section headers */
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold tracking-tighter;
+}
+
+.section-subtitle {
+  @apply text-lg md:text-xl text-slate-600 max-w-2xl;
+}
+
+/* Blog post prose */
+.prose-custom p {
+  @apply mb-5 text-[15px] leading-relaxed;
+}
+.prose-custom h2 {
+  @apply text-2xl font-semibold tracking-tight mt-10 mb-4;
+}
+.prose-custom h3 {
+  @apply text-xl font-semibold tracking-tight mt-8 mb-3;
+}
+.prose-custom ul, .prose-custom ol {
+  @apply pl-6 mb-5 space-y-1.5 text-[15px];
+}
+.prose-custom li {
+  @apply leading-relaxed;
+}
+.prose-custom a {
+  @apply text-orange-600 hover:text-orange-700 underline;
+}
+
+/* Stat pills */
+.stat-pill {
+  @apply inline-flex flex-col items-center justify-center rounded-2xl bg-white border border-slate-200 px-5 py-4 text-center;
+}
+
+/* Category badges */
+.badge {
+  @apply inline-block rounded-full px-3 py-0.5 text-xs font-semibold tracking-wide;
+}
+.badge-phd { @apply bg-violet-100 text-violet-700; }
+.badge-masters { @apply bg-sky-100 text-sky-700; }
+.badge-undergrad { @apply bg-emerald-100 text-emerald-700; }
+.badge-visa { @apply bg-amber-100 text-amber-700; }
+.badge-general { @apply bg-slate-200 text-slate-700; }
+
+/* Form styles */
+.form-input {
+  @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-orange-600 focus:ring-1 focus:ring-orange-600 outline-none transition;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-slate-700 mb-1.5;
+}
+
+/* Navbar active link hint (optional enhancement) */
+.nav-active {
+  @apply text-orange-600;
+}
+
+/* Tread animation for subtle up/down movement */
+@keyframes tread {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+}
+
+.animate-tread {
+  animation: tread 2s ease-in-out infinite;
+}
+
+.red-balloon {
+  width: 20px;
+  height: 26px;
+  background-color: #D51C39;
+  border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+  opacity: 0;
+}
+
+.red-balloon.visible {
+  opacity: 1;
+  animation: balloon-pop 0.6s ease-out forwards;
+}
+
+.red-balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  background-color: #D51C39;
+  transform: translateX(-50%);
+}
+
+@keyframes balloon-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.4) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
