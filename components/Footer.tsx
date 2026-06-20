@@ -77,7 +77,8 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-y-4 text-xs text-slate-500">
           <div>© {currentYear} Study2Passport. All rights reserved.</div>
-          <div className="flex gap-x-6">
+          <div className="flex flex-wrap items-center gap-x-6">
+            <Link href="/privacy-policy" className="hover:text-white transition-colors underline-offset-2 hover:underline">Privacy Policy</Link>
             <span>Trusted by students across 100+ countries</span>
           </div>
         </div>
