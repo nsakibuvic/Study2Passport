@@ -29,7 +29,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="overflow-hidden">
+    <div>
       {/* HERO */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-6 pt-20 pb-24 md:pt-24 md:pb-28">
@@ -69,11 +69,11 @@ export default function LandingPage() {
             </div>
 
             {/* Hero Image - Right */}
-            <div className="md:col-span-5">
+            <div className="md:col-span-5 xl:-mr-6 overflow-visible">
               <img 
                 src="/images/LandingPageImg1.jpg" 
                 alt="Study2Passport students achieving their study abroad dreams" 
-                className="w-full h-auto max-h-[460px] object-cover rounded-2xl shadow-2xl border border-white/10" 
+                className="w-full h-auto max-h-[460px] xl:max-h-[506px] xl:w-[125%] xl:max-w-none object-cover rounded-2xl shadow-2xl border border-white/10"
               />
             </div>
           </div>
