@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import AnimatedBrandName from './AnimatedBrandName';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -16,7 +17,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-zinc-700 border-b border-zinc-600">
+    <nav className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 border-b border-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -28,21 +29,19 @@ export default function Navbar() {
                 className="h-full w-full object-cover" 
               />
             </div>
-            <div className="flex flex-col leading-none">
-              <span className="font-semibold text-2xl tracking-tight text-white group-hover:text-amber-400 transition-colors">
-                Study2Passport
-              </span>
-              <span className="text-[10px] text-zinc-400 -mt-0.5 font-medium tracking-[2px]">YOUR GLOBAL EDUCATION PARTNER</span>
+            <div className="flex flex-col leading-none gap-1.5">
+              <AnimatedBrandName className="font-semibold text-2xl tracking-tight text-white group-hover:text-amber-400 transition-colors" />
+              <span className="text-[10px] text-zinc-400 font-medium tracking-[2px]">YOUR GLOBAL EDUCATION PARTNER</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10 text-sm font-medium">
+          <div className="hidden md:flex items-center gap-10 text-base font-medium">
             {navLinks.map((link) => (
               <Link 
                 key={link.href} 
                 href={link.href} 
-                className="text-zinc-300 hover:text-amber-400 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-amber-500 after:transition-all"
+                className="text-white hover:text-amber-400 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-amber-500 after:transition-all"
               >
                 {link.label}
               </Link>
@@ -62,7 +61,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsOpen(!isOpen)} 
-            className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-zinc-300 hover:bg-zinc-600 active:bg-zinc-500 transition-colors"
+            className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-white hover:bg-white/10 active:bg-white/20 transition-colors"
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
@@ -78,13 +77,13 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-zinc-600 bg-zinc-700 py-6 flex flex-col gap-1 text-base font-medium">
+          <div className="md:hidden border-t border-white bg-slate-900 py-6 flex flex-col gap-1 text-base font-medium">
             {navLinks.map((link) => (
               <Link 
                 key={link.href} 
                 href={link.href} 
                 onClick={closeMenu}
-                className="px-1 py-3 text-zinc-300 hover:text-amber-400 active:bg-zinc-600 rounded-lg transition-colors"
+                className="px-1 py-3 text-white hover:text-amber-400 active:bg-white/10 rounded-lg transition-colors"
               >
                 {link.label}
               </Link>

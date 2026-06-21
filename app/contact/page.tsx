@@ -159,6 +159,20 @@ export default function ContactPage() {
               </div>
 
               <div>
+                <div className="font-medium text-slate-900 mb-1">Phone</div>
+                <a href="tel:01741713399" className="text-orange-600 hover:underline">01741713399</a>
+              </div>
+
+              <div>
+                <div className="font-medium text-slate-900 mb-1">Address</div>
+                <div className="text-slate-600 text-sm leading-relaxed">
+                  Floor-3, 4 Sobhanbag Rd, Dhaka 1207<br />
+                  (Mohammadia Super Market, Shop 122 - 123),<br />
+                  Dhaka, Bangladesh, 1204
+                </div>
+              </div>
+
+              <div>
                 <div className="font-medium text-slate-900 mb-1">Facebook Community</div>
                 <a 
                   href="https://www.facebook.com/study2passport/" 

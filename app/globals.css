@@ -146,4 +146,85 @@ body {
   }
 }
 
+/* Navbar brand: "2" drops from above and swirls into Study2Passport */
+.brand-animated {
+  position: relative;
+}
+
+.brand-study {
+  animation: brand-study-gap 5s ease-in-out forwards;
+}
+
+.brand-two-slot {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  overflow: visible;
+  vertical-align: baseline;
+  animation: brand-slot-expand 5s ease-in-out forwards;
+}
+
+.brand-two {
+  display: inline-block;
+  transform-origin: center center;
+  animation: brand-two-drop-swirl 5s ease-in-out forwards;
+}
+
+@keyframes brand-study-gap {
+  0%,
+  72% {
+    margin-right: 0.3em;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+@keyframes brand-slot-expand {
+  0%,
+  72% {
+    width: 0;
+  }
+  100% {
+    width: 0.58em;
+  }
+}
+
+@keyframes brand-two-drop-swirl {
+  0% {
+    transform: translateY(-1.35em) rotate(0deg);
+  }
+  18% {
+    transform: translateY(-1.35em) rotate(360deg);
+  }
+  45% {
+    transform: translateY(-0.55em) rotate(540deg);
+  }
+  72% {
+    transform: translateY(-0.08em) rotate(680deg);
+  }
+  88% {
+    transform: translateY(0.06em) rotate(710deg);
+  }
+  100% {
+    transform: translateY(0) rotate(720deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-animated {
+    display: none !important;
+  }
+
+  .brand-static-fallback {
+    display: inline !important;
+  }
+
+  .brand-study,
+  .brand-two-slot,
+  .brand-two {
+    animation: none !important;
+  }
+}
+
 
