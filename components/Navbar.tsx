@@ -30,13 +30,13 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col leading-none gap-1.5">
-              <AnimatedBrandName className="font-semibold text-2xl tracking-tight text-white group-hover:text-amber-400 transition-colors" />
+              <AnimatedBrandName className="font-semibold text-2xl tracking-[0.14em]" />
               <span className="text-[10px] text-zinc-400 font-medium tracking-[2px]">YOUR GLOBAL EDUCATION PARTNER</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10 text-base font-medium">
+          <div className="hidden md:flex items-center gap-6 ml-auto text-base font-medium">
             {navLinks.map((link) => (
               <Link 
                 key={link.href} 
@@ -46,10 +46,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-          </div>
-
-          {/* CTA Button Desktop */}
-          <div className="hidden md:block">
             <Link 
               href="/contact" 
               className="inline-flex items-center justify-center rounded-full bg-amber-600 hover:bg-amber-500 active:bg-amber-700 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md"
@@ -61,7 +57,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsOpen(!isOpen)} 
-            className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-white hover:bg-white/10 active:bg-white/20 transition-colors"
+            className="md:hidden ml-auto inline-flex items-center justify-center w-11 h-11 rounded-lg text-white hover:bg-white/10 active:bg-white/20 transition-colors"
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >

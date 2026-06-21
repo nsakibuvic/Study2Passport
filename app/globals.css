@@ -164,8 +164,16 @@ body {
   animation: brand-slot-expand 5s ease-in-out forwards;
 }
 
-.brand-two {
+.brand-two,
+.brand-two-static {
   display: inline-block;
+  font-size: 1.25em;
+  color: #f97316;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+.brand-two {
   transform-origin: center center;
   animation: brand-two-drop-swirl 5s ease-in-out forwards;
 }
@@ -186,7 +194,7 @@ body {
     width: 0;
   }
   100% {
-    width: 0.58em;
+    width: 0.72em;
   }
 }
 

@@ -40,7 +40,7 @@ export default function LandingPage() {
                 EST. HELPING STUDENTS WORLDWIDE
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter xl:tracking-normal leading-[1.05] mb-6">
                 Your Path To<br />Education At Top Universities With Scholarship
               </h1>
 
@@ -69,11 +69,11 @@ export default function LandingPage() {
             </div>
 
             {/* Hero Image - Right */}
-            <div className="md:col-span-5 xl:-mr-6 overflow-visible">
+            <div className="md:col-span-5 overflow-visible xl:pr-1">
               <img 
                 src="/images/LandingPageImg1.jpg" 
                 alt="Study2Passport students achieving their study abroad dreams" 
-                className="w-full h-auto max-h-[460px] xl:max-h-[506px] xl:w-[125%] xl:max-w-none object-cover rounded-2xl shadow-2xl border border-white/10"
+                className="w-full h-auto max-h-[460px] xl:max-h-[506px] xl:w-full object-cover rounded-2xl shadow-2xl border border-white/10"
               />
             </div>
           </div>
